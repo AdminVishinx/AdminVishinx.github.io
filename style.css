@@ -1,0 +1,143 @@
+*{
+    background:#d0d8f5;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    overflow-y: hidden;
+
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 180px;
+    
+}
+
+.text-area {
+    height: 400px;
+    border: none;
+    color: #0A3871;
+    margin-top: 30px;
+    padding: 2px;
+    text-transform: lowercase;
+}
+::placeholder { color: #0A3871; }
+  .text-area:focus {
+      outline: none;
+    }
+
+.mensaje{
+    height: 630px;
+    background: white;
+    background-image: url("imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+}
+.mensaje:focus {
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-desencriptar {
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+    background: linear-gradient(315deg, rgb(66, 66, 70) 3%, rgb(122, 122, 128) 38%, rgb(165, 165, 170) 68%, rgb(83, 81, 81) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 800% 800%;
+    background-attachment: fixed;
+}
+
+.btn-encriptar {
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+    background: linear-gradient(315deg, rgb(3, 9, 102) 3%, rgb(27, 40, 179) 38%, rgb(12, 29, 223) 68%, rgb(0, 0, 0) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 800% 800%;
+    background-attachment: fixed;
+}
+
+.copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 120px;
+    margin-top: 565px;
+    position: absolute;
+    width: 336px;
+    background: linear-gradient(315deg, rgb(46, 47, 48) 3%, rgb(149, 149, 151) 38%, rgb(46, 47, 48) 68%, rgb(149, 149, 151) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 800% 800%;
+    background-attachment: fixed;
+}
+
+.informacion {
+    color: #495057;
+    font-size:18px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
